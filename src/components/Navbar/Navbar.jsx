@@ -66,7 +66,7 @@ function Navbar() {
                             <FaInstagram />
                         </a>
                     </div>
-                    <div className="connect">Let’s Connect</div>
+                    <div className="connect" style={{zIndex:"100"}}>Let’s Connect</div>
                 </div>
             )}
         </nav>

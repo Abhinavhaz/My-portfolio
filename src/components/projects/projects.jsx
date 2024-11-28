@@ -24,24 +24,7 @@ function Projects() {
         "A Spotify-like platform with playlist management, using React and Tailwind CSS.",
       img: qtify,
     },
-    {
-      title: "Qtify ",
-      description:
-        "A Spotify-like platform with playlist management, using React and Tailwind CSS.",
-      img: qtify,
-    },
-    {
-      title: "Qtify ",
-      description:
-        "A Spotify-like platform with playlist management, using React and Tailwind CSS.",
-      img: qtify,
-    },
-    {
-      title: "Qtify ",
-      description:
-        "A Spotify-like platform with playlist management, using React and Tailwind CSS.",
-      img: qtify,
-    },
+    
   ];
 
   return (
