@@ -43,7 +43,7 @@ background: linear-gradient(135deg,  #722789, #7c438d, #7f7fc5);
       transform: translateY(0); /* Start and end at the original position */
     }
     50% {
-      transform: translateY(80px); /* Move up by 20px at halfway point */
+      transform: translateY(-80px); /* Move up by 20px at halfway point */
     }
   }
   .container img:first-of-type {

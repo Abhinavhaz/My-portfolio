@@ -3,6 +3,7 @@ import { Box } from "@mui/material"
 import "./banner.css"
 import astro from "../Assets/two_astro-removebg-preview.png"
 import astro2 from "../Assets/two_astro_right.png_-removebg-preview.png"
+import bannerImg from "../Assets/banner-bg.png"
 
 function Banner(){
 

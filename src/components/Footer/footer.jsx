@@ -9,9 +9,11 @@ function Footer() {
             className="footer"
             style={{
                 backgroundImage: `url(${footerimg})`,
+                paddingTop:"10%",
+                // backgroundColor:"skyblue",
                 height:"100%", 
                 backgroundSize: "cover", 
-                // backgroundRepeat: "no-repeat", 
+                backgroundRepeat: "no-repeat", 
                 backgroundPosition: "center", 
             }}
         >

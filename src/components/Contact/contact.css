@@ -3,7 +3,8 @@
   height: auto; */
   padding: 2rem;
   margin-top: 10%;
-  margin-bottom: 10%;
+  /* margin-bottom: 8%; */
+  /* padding-bottom: 10%; */
   background: linear-gradient(135deg, #c53cd1,#722789,#722789, #47438d, #6060f6);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
