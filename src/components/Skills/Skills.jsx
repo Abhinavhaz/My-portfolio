@@ -1,12 +1,10 @@
 import { ProgressBar } from "react-bootstrap";
 import { useState } from "react";
-import "./skills.css"
-import { ArrowBack } from "@mui/icons-material"
-import { CircularProgress,Box,Typography } from "@mui/material"
-import { useMediaQuery } from "@mui/material";
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import "./skills.css";
 
+import { CircularProgress, Box, Typography } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
+import galaxyImg from "../Assets/galaxy.avif";
 
 function Skills() {
     const isMediumScreen = useMediaQuery("(max-width: 1191px) and (min-width: 768px)");
@@ -40,7 +38,19 @@ function Skills() {
     };
 
     return (
-        <div className="skill-container">
+        <div
+            className="skill-container"
+            style={{
+                backgroundImage: `url(${galaxyImg})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                width: "100vw",
+                height: "540px",
+                display: "flex",
+                justifyContent: "center",
+            }}
+        >
             <div className="box2">
                 <h1>Skills</h1>
                 <p>
@@ -50,52 +60,49 @@ function Skills() {
                 </p>
 
                 <div className="skill">
-                    {/* <button onClick={previous} disabled={page === 1} style={{ backgroundColor:"none",fontSize:"1.5rem" }}>
+                    <button
+                        onClick={previous}
+                        disabled={page === 1}
+                        style={{
+                            all: "unset",
+                            fontSize: "1.9rem",
+                            cursor: "pointer",
+                        }}
+                    >
                         ◀️
-                    </button> */}
-<button
-  onClick={previous}
-  disabled={page === 1}
-  style={{
-    all: "unset", 
-    fontSize: "1.9rem",
-    cursor: "pointer",
-   
-  }}
->
-  ◀️
-</button>
+                    </button>
 
-                    {skills.slice((page - 1) * itemsPerPage, page * itemsPerPage).map((skill, index) => (
-                        <div className="skill-item" key={index}>
-                            <div className="circular-progress-wrapper">
-                                <CircularProgress
-                                    variant="determinate"
-                                    value={skill.percentage}
-                                    size={isMediumScreen ? 70 : tooSmall ? 65 : 80}
-                                    thickness={6}
-                                    style={{ color: "white" }}
-                                />
-                                <div className="progress-text">{`${skill.percentage}%`}</div>
+                    {skills
+                        .slice((page - 1) * itemsPerPage, page * itemsPerPage)
+                        .map((skill, index) => (
+                            <div className="skill-item" key={index}>
+                                <div className="circular-progress-wrapper">
+                                    <CircularProgress
+                                        variant="determinate"
+                                        value={skill.percentage}
+                                        size={isMediumScreen ? 70 : tooSmall ? 65 : 80}
+                                        thickness={6}
+                                        style={{ color: "white" }}
+                                    />
+                                    <div className="progress-text">{`${skill.percentage}%`}</div>
+                                </div>
+                                <p className="skill-name">{skill.name}</p>
                             </div>
-                            <p className="skill-name">{skill.name}</p>
-                        </div>
-                    ))}
+                        ))}
 
                     <button
                         onClick={next}
-                        disabled={page === totalPages} style={{
-                            all: "unset", 
+                        disabled={page === totalPages}
+                        style={{
+                            all: "unset",
                             fontSize: "1.5rem",
                             cursor: "pointer",
-                           
-                          }}
+                        }}
                     >
                         ▶️
                     </button>
                 </div>
             </div>
-            
         </div>
     );
 }
