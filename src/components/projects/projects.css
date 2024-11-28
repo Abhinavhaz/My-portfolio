@@ -23,67 +23,56 @@
 } */
 
 .project-container {
-    background-color: #0e0d0d;
-    color: white;
-    width: 100vw;
-    height: 100vh;
-    padding: 20px;
-    
-    box-sizing: border-box;
-    
-  }
-  
-  
-  .project2 {
-    text-align: center;
-   
-    
-    padding: 20px;
+  background-color: #0e0d0d;
+  color: white;
+  width: 100vw;
+  /* height: 100vh; */
+  padding: 20px;
 
-    p{
-      text-align-last: center;
-      text-align: left;
-    }
-  }
-  
+  box-sizing: border-box;
+}
+
+.project2 {
+  /* text-align: center; */
+  padding: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  grid-gap: 20px;
+  justify-content: center; /* Centers the grid horizontally */
+
+  margin: 20px;
+  /* margin-left: 100px; */
+}
+
+/* .card > div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 530px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+} */
+
+/* Optional: Add box shadow to make cards more noticeable */
+.card > div:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-    grid-gap: 20px;
-    justify-content: center; /* Centers the grid horizontally */
-    
-    margin: 20px;
-    margin-left: 100px;
-   
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   }
-  
-  .card > div {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 530px;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 10px;
-    transition: all 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .card {
+    grid-template-columns: 1fr; /* 1 card per row */
   }
-  
-  /* Optional: Add box shadow to make cards more noticeable */
-  .card > div:hover {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .card {
-      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      grid-template-columns: 1fr; /* 1 card per row */
-    }
-  }
-  
+}

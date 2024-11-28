@@ -12,7 +12,7 @@ import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export default function PCard({ title, description ,img}) {
+export default function PCard({ title, description ,img }) {
   const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
@@ -25,13 +25,15 @@ export default function PCard({ title, description ,img}) {
   }));
 
   const [expanded, setExpanded] = React.useState(false);
+  const [height, setHeight] = React.useState(400);
 
   const handleExpandClick = () => {
+    setHeight(expanded ? 400 : 600);
     setExpanded(!expanded);
   };
 
   return (
-    <Card style={{ maxWidth: 345, backgroundColor: "" }} >
+    <Card style={{ height: height, maxWidth: 345, backgroundColor: "" }} >
       <CardHeader
         avatar={
         <Avatar sx={{ bgcolor: red[500]}} aria-label="recipe">
@@ -41,7 +43,6 @@ export default function PCard({ title, description ,img}) {
         sx={{ textAlign:"left", bgcolor:"" }}
         title={title}
         subheader="September 14, 2016"
-
       />
       <CardMedia
         component="img"

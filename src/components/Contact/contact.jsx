@@ -108,6 +108,9 @@ export const ContactForm = () => {
             placeholder="Message"
             value={formDetails.message}
             onChange={handleInputChange}
+            style={{
+              resize: "none",
+            }}
           />
           <button className="button1" type="submit">
             Send
