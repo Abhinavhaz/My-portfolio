@@ -1,0 +1,155 @@
+.container{
+    /* background-color: pink; */
+color: white;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 10%;
+margin-left: 5%;
+p{
+  text-align: left;
+}
+}
+
+.box{
+border: 1px solid rgb(255, 255, 255);
+width:max-content;
+
+height: 30px;
+object-fit:fill;
+padding: 5px;
+text-align:center;
+background: linear-gradient(135deg,  #722789, #7c438d, #7f7fc5);
+
+
+}
+
+  /* .container img {
+    width: 20%; 
+    height: auto; 
+  
+  }
+ 
+   */
+   .container img {
+    width: 20%; 
+    height: auto; 
+    animation:float 4s ease-in-out infinite; 
+  }
+  
+  /* Up and down floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+      transform: translateY(80px); /* Move up by 20px at halfway point */
+    }
+  }
+  .container img:first-of-type {
+    animation-delay: 0s; /* No delay for the first image */
+  }
+  
+  .container img:last-of-type {
+    animation-delay: 2s; /* Half the duration delay for the second image */
+  }
+  /* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+
+
+  .container h1 span {
+    display: inline-block;  
+    opacity: 0;
+    animation: popOut 4s ease-in-out backwards infinite;  
+  }
+  
+   @keyframes popOut {
+    0% {
+      transform: translateX(-30%);
+      opacity: 0;
+    }
+    50% {
+        transform: translateY(-20px); 
+      color: rgb(56, 178, 239);
+
+      }
+    100% {
+      transform: translateX(0);
+      color: rgb(198, 41, 170);
+      opacity: 1;
+    }
+  }
+  
+ 
+  @media (max-width: 1191px) and (min-width: 768px) {
+    
+
+    .box {
+        border: 1px solid rgb(255, 255, 255);
+width:max-content;
+height: auto;
+font-size:0.8rem ;
+    }
+
+  }
+
+
+
+
+
+
+
+  @media (max-width: 390px) {
+  .box {
+        border: 1px solid rgb(255, 255, 255);
+width:max-content;
+height: auto;
+font-size:0.7rem ;
+    }
+
+    .container{
+        h1{
+            font-size: medium;
+        }
+        p{
+font-size:small;
+        }
+        
+    }
+
+    @keyframes popOut {
+        0% {
+          transform: translateX(-30%);
+          opacity: 0;
+        }
+        50% {
+            transform: translateY(-10px); 
+          color: rgb(56, 178, 239);
+    
+          }
+        100% {
+          transform: translateX(0);
+          color: rgb(198, 41, 170);
+          opacity: 1;
+        }
+      }
+  }
+
+  @media (max-width: 768px) {
+
+    .box {
+        border: 1px solid rgb(255, 255, 255);
+width:max-content;
+height: auto;
+font-size:0.8rem ;
+    }
+
+    .container{
+        h1{
+            font-size: 1.7rem;
+        }
+        p{
+font-size:medium;
+        }
+        
+    }
+  }

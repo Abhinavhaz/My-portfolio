@@ -1,0 +1,153 @@
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  color: white;
+  position: relative;
+}
+
+/* Adjust Nav2 items */
+.Nav2 {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  color: #ffffff;
+}
+
+.Nav2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.Nav2 h4 {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.connect {
+  border: 1px solid rgb(255, 255, 255);
+  width: 120px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+/* Mobile Menu Icon */
+.menu-button {
+  display: none;
+}
+
+.social-icons {
+  display: flex;
+  
+  gap: 100%;
+ 
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+/* For screens larger than 768px (Desktop View) */
+@media (min-width: 768px) {
+  .Nav2 {
+      display: flex !important; /* Ensure the nav menu is always visible */
+  }
+
+  .menu-button {
+      display: none;
+  }
+
+  .menuOpen {
+      display: none; /* Ensure dropdown is hidden */
+  }
+}
+
+/* For Tablet */
+@media (max-width: 1191px) and (min-width: 768px) {
+  .Nav {
+      flex-direction: row;
+  }
+
+  .Nav2 {
+      gap: 0px;
+      width: 60%;
+      h4 {
+          font-size: 0.8rem;
+      }
+  }
+
+  .connect {
+      font-size: 0.8rem;
+      width: 110px;
+      height: 20px;
+      padding-top: 5px;
+      text-align: center;
+  }
+}
+
+/* For Mobile View */
+@media (max-width: 768px) {
+  .Nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 50px;
+  }
+
+  .Nav2 {
+      display: none; /* Hide the desktop nav menu */
+  }
+
+  .menu-button {
+      display: block; /* Visible in mobile view */
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+  }
+
+  .menuOpen {
+      display: flex;
+      width: 140px;
+      flex-direction: column;
+      gap: 10px;
+      background-color: white;
+      color: black;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+  }
+
+  .menuOpen h5 {
+      margin: 5px;
+      padding: 5px 0;
+  }
+
+  .connect {
+      margin-left: 30px;
+      border: 1px solid rgb(0, 0, 0);
+      width: 100px;
+      height: 30px;
+      padding-top: 0px;
+      text-align: center;
+  }
+}
