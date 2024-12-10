@@ -28,19 +28,19 @@ export default function PCard({ title, description ,img }) {
   const [height, setHeight] = React.useState(400);
 
   const handleExpandClick = () => {
-    setHeight(expanded ? 400 : 600);
+    setHeight(expanded ? 400 :"100%" );
     setExpanded(!expanded);
   };
 
   return (
-    <Card style={{ height: height, maxWidth: 345, backgroundColor: "" }} >
+    <Card style={{ height: height, maxWidth: 345, backgroundColor: "rgb(40, 38, 38)" , border:"1px solid grey" , boxSizing: "border-box"}} >
       <CardHeader
         avatar={
         <Avatar sx={{ bgcolor: red[500]}} aria-label="recipe">
             {title[0]}
           </Avatar>
         }
-        sx={{ textAlign:"left", bgcolor:"" }}
+        sx={{ textAlign:"left",color:"white" }}
         title={title}
         subheader="September 14, 2016"
       />
@@ -50,29 +50,77 @@ export default function PCard({ title, description ,img }) {
         image={img}
         alt="Paella dish"
       />
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </CardContent>
+     <CardContent sx={{  height: expanded ? 'auto' : '100px',  overflowY: "auto",
+          WebkitOverflowScrolling: "touch",
+          padding: "10px",
+          color: "white",
+          borderBottom: expanded ?"1px solid red":"",
+          scrollbarWidth: "none", // Firefox: hide scrollbar
+          msOverflowStyle: "none", // IE: hide scrollbar
 
-      <CardActions disableSpacing>
+
+     }}>
+  <Typography variant="body2" sx={{ color: "white" }}>
+    {description}
+  </Typography>
+  
+</CardContent>
+
+      <CardActions disableSpacing sx={{border:"1ps solid green"}}>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <ExpandMoreIcon  sx={{color:"white" , position:"absolute", bottom: 30,right: expanded ?-10:0, bgcolor:"grey", borderRadius:"50%"}}/>
         </ExpandMore>
       </CardActions>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>Demo:</Typography>
-          <Typography paragraph>Vercel link</Typography>
-          <Typography paragraph>GitHub link</Typography>
-        </CardContent>
+       
+     <CardContent sx={{ color: "white", textAlign: "left", padding: 2 }}>
+  <Typography paragraph sx={{ width: "100%", fontWeight: "bold" }}>
+    Demo:
+  </Typography>
+  <Typography paragraph sx={{ textAlign: "left", width: "100%" }}>
+    Vercel link:{" "}
+    <a
+      href="https://expense-peach-six.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        color: "white",
+        textDecoration: "underline",
+        display: "block",
+       color:" rgb(61, 188, 208)",
+        marginTop: 4,
+      }}
+    >
+      https://expense-peach-six.vercel.app/
+    </a>
+  </Typography>
+  <Typography paragraph sx={{ textAlign: "left", width: "100%" }}>
+    GitHub link:{" "}
+    <a
+      href="https://github.com/Abhinavhaz/expense"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        color: "white",
+        textDecoration: "underline",
+        display: "block",
+        marginTop: 4,
+       color:" rgb(61, 188, 208)"
+      }}
+    >
+      https://github.com/Abhinavhaz/expense
+    </a>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit incidunt ipsum, odio nostrum error dicta esse quidem cupiditate omnis? Aut voluptas doloribus excepturi quasi obcaecati, soluta est delectus atque!
+  </Typography>
+</CardContent>
+
+
       </Collapse>
     </Card>
   );

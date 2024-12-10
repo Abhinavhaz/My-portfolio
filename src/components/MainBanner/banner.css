@@ -9,19 +9,33 @@ margin-left: 5%;
 p{
   text-align: left;
 }
+h1{
+  font-family:monospace;
+}
+
 }
 
 .box{
-border: 1px solid rgb(255, 255, 255);
+
 width:max-content;
 
 height: 30px;
 object-fit:fill;
 padding: 5px;
 text-align:center;
-background: linear-gradient(135deg,  #892781, #7c438d, #7f7fc5);
+font-size: 1.5rem;
+font-style: italic;
+
+background: linear-gradient(135deg,  #ffffff, #ffffff, #99d5e0,#3853b3,#41388f, #c31c67,#f50672,  #ffffff );
 
 
+/* background: linear-gradient(135deg,  #1f2464, #0428f4,#50619f,#ffffff, #c31c67,#f50672,  #ffffff ); */
+
+-webkit-background-clip: text; /* Clips the background to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text itself transparent */
+  background-clip: text; /* For non-WebKit browsers */
+  /* text-fill-color: transparent; */
+/* color: black; */
 }
 
   /* .container img {
@@ -64,7 +78,7 @@ background: linear-gradient(135deg,  #892781, #7c438d, #7f7fc5);
   
    @keyframes popOut {
     0% {
-      transform: translateX(-30%);
+      transform: translateX(-5%);
       opacity: 0;
     }
     50% {

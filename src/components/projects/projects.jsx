@@ -15,7 +15,9 @@ function Projects() {
     {
       title: "Qkart",
       description:
-        "An e-commerce platform developed with React, focusing on cart management and product listings.",
+      "QKart is an E-commerce application offering a variety of products for customers to choose from.variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from. variety of products for customers to choose from.  ",
+
+     
       img: qkart,
     },
     {

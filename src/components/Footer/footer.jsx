@@ -21,7 +21,7 @@ function Footer() {
                 <div className="footer-section">
                     <h3>About Me</h3>
                     <p>
-                        <div style={{ textAlign: "left" }}>
+                        <div >
                             Passionate about building user-friendly and responsive web applications.
                             Let’s create something amazing together!
                         </div>
