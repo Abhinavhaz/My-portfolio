@@ -10,7 +10,7 @@ p{
   text-align: left;
 }
 h1{
-  font-family:monospace;
+  font-family:Montserrat;
 }
 
 }
@@ -26,7 +26,7 @@ text-align:center;
 font-size: 1.5rem;
 font-style: italic;
 
-background: linear-gradient(135deg,  #ffffff, #ffffff, #99d5e0,#3853b3,#41388f, #c31c67,#f50672,  #ffffff );
+background: linear-gradient(135deg,  #ffffff, #ffffff, #99d5e0,#3853b3,#190aa3, #c31c67,#f50672,  #ffffff );
 
 
 /* background: linear-gradient(135deg,  #1f2464, #0428f4,#50619f,#ffffff, #c31c67,#f50672,  #ffffff ); */
@@ -73,6 +73,7 @@ background: linear-gradient(135deg,  #ffffff, #ffffff, #99d5e0,#3853b3,#41388f, 
   .container h1 span {
     display: inline-block;  
     opacity: 0;
+
     animation: popOut 4s ease-in-out backwards infinite;  
   }
   
@@ -88,7 +89,9 @@ background: linear-gradient(135deg,  #ffffff, #ffffff, #99d5e0,#3853b3,#41388f, 
       }
     100% {
       transform: translateX(0);
-      color: rgb(198, 41, 170);
+   color: #f50672;
+      /* #c31c67,#f50672     ; */
+
       opacity: 1;
     }
   }

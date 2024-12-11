@@ -60,7 +60,7 @@ export default function PCard({ title, description ,img }) {
 
 
      }}>
-  <Typography variant="body2" sx={{ color: "white" }}>
+  <Typography variant="body2" sx={{ color: "white",fontFamily:"Times-roman" }}>
     {description}
   </Typography>
   

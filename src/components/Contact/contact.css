@@ -74,7 +74,9 @@ textarea {
 .button1 {
   width: 100%;
   padding: 1rem;
-  background-color: #04b9e6;
+  /* background-color: #04b9e6; */
+  background-color: #059dfc;
+
   
   
   color: white;
@@ -86,7 +88,8 @@ textarea {
 }
 
 .button1:hover {
-  /* background-color: #4cae4c; */
+    background-color: #04b9e6;
+
 }
 
 .error {

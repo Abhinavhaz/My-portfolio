@@ -23,7 +23,7 @@ function Navbar() {
                 <a href="#projects">
                     <h4>Projects</h4>
                 </a>
-                <div className="social-icons">
+                <div className="social-iconsNav">
                     <a href="https://github.com/Abhinavhaz" target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                     </a>
@@ -34,6 +34,7 @@ function Navbar() {
                         <FaInstagram />
                     </a>
                 </div>
+                
 <a href="#contact">  
 <div className="connect">Let’s Connect</div>
 

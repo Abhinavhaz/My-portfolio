@@ -6,6 +6,7 @@
   padding-left: 20px;
   color: white;
   position: static;
+  /* background-color: #7c7676; */
 }
 
 /* Adjust Nav2 items */
@@ -35,6 +36,13 @@
   height: 30px;
   padding-top: 5px;
   text-align: center;
+transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+.connect:hover{
+background-color: white;
+color: black;
 }
 
 /* Mobile Menu Icon */
@@ -42,20 +50,22 @@
   display: none;
 }
 
-.social-icons {
+.social-iconsNav {
   display: flex;
-  
-  gap: 100%;
+  /* background-color: #e235cb; */
+  gap:30%;
+  margin-right: 50px;
  
 }
 
-.social-icons a {
+.social-iconsNav a {
   font-size: 1.5rem;
   color: white;
 }
 
-.social-icons a:hover {
+.social-iconsNav a:hover {
   color: #ffd700;
+  
 }
 
 /* For screens larger than 768px (Desktop View) */

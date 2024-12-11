@@ -10,7 +10,7 @@ import banner from "../src/components/Assets/banner-bg.png"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{boxSizing:"border-box"}}>
       <div  style={{ backgroundImage: `url(${banner})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>  
       <Navbar />
       <div id="banner">

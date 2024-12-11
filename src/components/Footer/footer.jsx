@@ -21,13 +21,13 @@ function Footer() {
                 <div className="footer-section">
                     <h3>About Me</h3>
                     <p>
-                        <div >
+                        <div style={{textAlign:"center"}}>
                             Passionate about building user-friendly and responsive web applications.
                             Let’s create something amazing together!
                         </div>
                     </p>
                 </div>
-                <div className="footer-section">
+                <div className="footer-section" >
                     <h3>Contact</h3>
 
                     <p >
@@ -38,9 +38,9 @@ function Footer() {
                     </p>
                     
                 </div>
-                <div className="footer-section">
+                <div className="footer-section"  style={{marginRight:"-70px"}}>
                     <h3>Follow Me</h3>
-                    <div className="social-icons">
+                    <div className="social-iconsfooter">
                         <a href="https://github.com/Abhinavhaz" target="_blank" rel="noopener noreferrer">
                             <FaGithub />
                         </a>
