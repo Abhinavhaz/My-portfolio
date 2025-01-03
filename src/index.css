@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image:url(../../../Downloads/banner-bg.png); */
-  box-sizing: border-box;
+box-sizing:content-box;
   background-color: black;
   
  

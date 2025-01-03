@@ -1,7 +1,7 @@
 .skill-container{
   
    /* background-image:url(../../../../../Downloads/galaxy.avif); */
-background-color: #fff;
+
    
    background-size: cover;
    background-repeat: no-repeat;
@@ -14,6 +14,7 @@ width: 100vw;
    display: flex;
    justify-content: center;
    align-items: center;
+   
 }
 
 
@@ -31,20 +32,22 @@ border-radius: 100px;
 }
 .skill{
     height: 120px;
-    margin-top: 40px;
-    /* background-color: rgb(74, 75, 75); */
-    display: flex;
+   width: auto;
+    margin-top: 80px;
+    /* background-color: rgb(62, 194, 194); */
+    margin-left: 50px;
+    margin-right: 60px;
+
+    /* display: flex;
     justify-content: space-around;
-    align-items:center; 
+    align-items:center;  */
 }
 
 
 
   .skill-item{
-    /* background-color: #929191; */
+    /* background-color: #c41818; */
     display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   
   .circular-progress-wrapper{
@@ -61,7 +64,7 @@ top: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
     font-size: 0.9rem;
-    /* color: #fffdfd; */
+    /* color: #eb0404; */
 
   }
   .skill-name {
@@ -70,7 +73,10 @@ top: 50%;
     /* background-color: #454343; */
   } 
 
-
+.circular-progress-wrapper{
+  /* background-color: #bbe1e8; */
+  margin-left: 70px;
+}
 
   /* Tablet */
   @media (max-width: 1191px) and (min-width: 768px){
@@ -78,8 +84,8 @@ top: 50%;
 
     .box2{
         text-align: center;
-    
-    background: linear-gradient(135deg,  #722789, #7c438d, #7f7fc5);
+        background: linear-gradient(135deg,  #cc2acf, #bd4aac, #7f7fc5);
+
     
     color:#fff;
     border-radius: 100px;
@@ -93,14 +99,14 @@ h1{
 
    
 
-    .skill-item{
+    /* .skill-item{
         
         height:auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size:medium;
-      }
+      } */
   }
 
 
@@ -110,7 +116,8 @@ h1{
     .box2{
         text-align: center;
     
-    background: linear-gradient(135deg,  #722789, #7c438d, #7f7fc5);
+        background: linear-gradient(135deg,  #cc2acf, #bd4aac, #7f7fc5);
+
     
     color:#fff;
     border-radius: 60px;
@@ -126,18 +133,15 @@ h1{
         font-weight: bold;
       } 
 
-      .skill{
+      /* .skill{
         height: 90px;
         margin-top: 40px;
-        /* background-color: rgb(74, 75, 75); */
         display: flex;
         justify-content: space-around;
         
-    }
+    } */
 
-   .skill button {
-   align-items: flex-start;
-   }
+  
   }
 
 
@@ -148,19 +152,47 @@ h1{
     .box2{
         text-align: center;
     
-    background: linear-gradient(135deg,  #722789, #7c438d, #7f7fc5);
     
-    color:#fff;
+background: linear-gradient(135deg,  #cc2acf, #bd4aac, #7f7fc5);
+    
+    color:#ffffff;
     border-radius: 50px;
-        height: 350px;
-        width:auto;
+        height: 380px;
+        width:  500px;
         padding: 4px;
-        margin: 20px;
+        margin: auto;
+        /* margin-left:auto;
+        margin-right: auto; */
+       
+       
 
-h1{
+h1 {
     font-size: 1.5rem;
+
 }
       
 }
 
+}
+
+@media (max-width: 510px) and (min-width: 429px){
+.box2{
+  height: 380px;
+        width:  400px;
+        padding: 2px;
+}
+}
+
+
+.skill-container {
+  font-family: "Arial", sans-serif;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white; /* Arrows color */
+}
+
+.slick-dots li button:before {
+  color: white; /* Dots color */
 }

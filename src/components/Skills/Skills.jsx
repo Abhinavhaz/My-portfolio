@@ -1,11 +1,13 @@
 import { ProgressBar } from "react-bootstrap";
 import { useState } from "react";
 import "./skills.css";
-
+import Slider from "react-slick"
 import { CircularProgress, Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import galaxyImg from "../Assets/galaxy.avif";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function Skills() {
     const isMediumScreen = useMediaQuery("(max-width: 1191px) and (min-width: 768px)");
     const tooSmall = useMediaQuery("(max-width: 430px)");
@@ -17,35 +19,58 @@ function Skills() {
         { name: "CSS", percentage: 70 },
         { name: "JavaScript", percentage: 85 },
         { name: "React", percentage: 90 },
-        { name: "Bootstrap", percentage: 90 },
-        { name: "NodeJs", percentage: 90 },
-        { name: "ExpressJs", percentage: 90 },
-        { name: "MongoDB", percentage: 90 },
+       
     ];
 
     // Adjust items per page based on screen size
-    const itemsPerPage = tooSmall ? 2 : 3; // Show 2 items if screen width is < 430px, else 3 items
-    const totalPages = Math.ceil(skills.length / itemsPerPage);
+    // const itemsPerPage = tooSmall ? 2 : 3; // Show 2 items if screen width is < 430px, else 3 items
+    // const totalPages = Math.ceil(skills.length / itemsPerPage);
 
-    const previous = () => {
-        if (page === 1) return;
-        setPage((page) => page - 1);
+    // const previous = () => {
+    //     if (page === 1) return;
+    //     setPage((page) => page - 1);
+    // };
+
+    // const next = () => {
+    //     if (page === totalPages) return;
+    //     setPage((page) => page + 1);
+    // };
+
+
+
+    const sliderSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     };
-
-    const next = () => {
-        if (page === totalPages) return;
-        setPage((page) => page + 1);
-    };
-
     return (
         <div
             className="skill-container"
             style={{
-                backgroundImage: `url(${galaxyImg})`,
+                // backgroundImage: `url(${galaxyImg})`,
+                backgroundColor:"black",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
-                width: "100vw",
+                width: "100%",
                 height: "540px",
                 display: "flex",
                 justifyContent: "center",
@@ -59,50 +84,36 @@ function Skills() {
                     distinctio tempore aperiam, eum eaque facere eligendi?
                 </p>
 
+               
+                  
                 <div className="skill">
-                    <button
-                        onClick={previous}
-                        disabled={page === 1}
-                        style={{
-                            all: "unset",
-                            fontSize: "1.9rem",
-                            cursor: "pointer",
-                        }}
-                    >
-                        ◀️
-                    </button>
+                    <Slider {...sliderSettings}>
+                        {skills.map((skill, index) => (
 
-                    {skills
-                        .slice((page - 1) * itemsPerPage, page * itemsPerPage)
-                        .map((skill, index) => (
-                            <div className="skill-item" key={index}>
+                            <div key={index} className="skill-item">
+
                                 <div className="circular-progress-wrapper">
                                     <CircularProgress
                                         variant="determinate"
                                         value={skill.percentage}
                                         size={isMediumScreen ? 70 : tooSmall ? 65 : 80}
-                                        thickness={6}
-                                        style={{ color: "white" }}
+                                        thickness={5}
+                                        style={{ color: "#00CFFF" }}
                                     />
+
                                     <div className="progress-text">{`${skill.percentage}%`}</div>
+                                <div className="skill-name">{skill.name}</div>
+
                                 </div>
-                                <p className="skill-name">{skill.name}</p>
+
                             </div>
                         ))}
 
-                    <button
-                        onClick={next}
-                        disabled={page === totalPages}
-                        style={{
-                            all: "unset",
-                            fontSize: "1.5rem",
-                            cursor: "pointer",
-                        }}
-                    >
-                        ▶️
-                    </button>
+                        
+                    </Slider>
                 </div>
             </div>
+            
         </div>
     );
 }

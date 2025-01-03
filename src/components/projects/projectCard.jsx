@@ -50,12 +50,13 @@ export default function PCard({ title, description ,img }) {
         image={img}
         alt="Paella dish"
       />
-     <CardContent sx={{  height: expanded ? 'auto' : '100px',  overflowY: "auto",
+     <CardContent sx={{  height: expanded ? 'auto' : '100px',
+       overflowY: "auto",
           WebkitOverflowScrolling: "touch",
           padding: "10px",
           color: "white",
           borderBottom: expanded ?"1px solid red":"",
-          scrollbarWidth: "none", // Firefox: hide scrollbar
+          scrollbarWidth: "none", 
           msOverflowStyle: "none", // IE: hide scrollbar
 
 

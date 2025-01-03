@@ -26,14 +26,15 @@ text-align:center;
 font-size: 1.5rem;
 font-style: italic;
 
-background: linear-gradient(135deg,  #ffffff, #ffffff, #99d5e0,#3853b3,#190aa3, #c31c67,#f50672,  #ffffff );
-
+/* background: linear-gradient(135deg,  #ffffff, #ffffff, #99d5e0,#3853b3,#190aa3, #c31c67,#f50672,  #ffffff );
+ */
+color: #fff;
 
 /* background: linear-gradient(135deg,  #1f2464, #0428f4,#50619f,#ffffff, #c31c67,#f50672,  #ffffff ); */
 
--webkit-background-clip: text; /* Clips the background to the text */
-  -webkit-text-fill-color: transparent; /* Makes the text itself transparent */
-  background-clip: text; /* For non-WebKit browsers */
+/* -webkit-background-clip: text; Clips the background to the text */
+  /* -webkit-text-fill-color: transparent; Makes the text itself transparent */
+  /* background-clip: text; For non-WebKit browsers */
   /* text-fill-color: transparent; */
 /* color: black; */
 }
@@ -101,7 +102,7 @@ background: linear-gradient(135deg,  #ffffff, #ffffff, #99d5e0,#3853b3,#190aa3, 
     
 
     .box {
-        border: 1px solid rgb(255, 255, 255);
+        
 width:max-content;
 height: auto;
 font-size:0.8rem ;
@@ -117,7 +118,7 @@ font-size:0.8rem ;
 
   @media (max-width: 390px) {
   .box {
-        border: 1px solid rgb(255, 255, 255);
+       
 width:max-content;
 height: auto;
 font-size:0.7rem ;
@@ -154,7 +155,7 @@ font-size:small;
   @media (max-width: 768px) {
 
     .box {
-        border: 1px solid rgb(255, 255, 255);
+        
 width:max-content;
 height: auto;
 font-size:0.8rem ;

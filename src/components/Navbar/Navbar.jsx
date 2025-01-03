@@ -42,21 +42,21 @@ function Navbar() {
             </div>
 
             <button onClick={handleMenuToggle} className="menu-button">
-                {menuOpen ? "✖" : "☰"}
+                {menuOpen ? '❌' : "☰"}
             </button>
 
             {menuOpen && (
                 <div className="menuOpen">
-                    <a href="#banner">
+                    <a href="#banner" style={{ textDecoration: "none" }}>
                         <h5>Home</h5>
-                    </a>
-                    <a href="#skills">
+                                                    </a>
+                    <a href="#skills" style={{ textDecoration: "none" }}>
                         <h5>Skills</h5>
                     </a>
-                    <a href="#projects">
+                    <a href="#projects" style={{ textDecoration: "none" }}>
                         <h5>Projects</h5>
                     </a>
-                    <div className="social-icons">
+                    <div className="social-iconsNav">
                         <a href="https://github.com/Abhinavhaz" target="_blank" rel="noopener noreferrer">
                             <FaGithub />
                         </a>
@@ -67,7 +67,9 @@ function Navbar() {
                             <FaInstagram />
                         </a>
                     </div>
-                    <div className="connect" style={{zIndex:"100"}}>Let’s Connect</div>
+                    <a href="#contact" style={{ textDecoration: "none" }}>  
+                    <div className="connect" style={{zIndex:"100"}}>Let’s Connect</div></a>
+
                 </div>
             )}
         </nav>

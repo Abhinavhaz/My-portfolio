@@ -74,6 +74,13 @@
 }
 
 @media (max-width: 768px) {
+    
+    .footer{
+        width:95.9%;
+        height: auto;
+        
+    }
+
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -100,5 +107,13 @@
 
     .footer-bottom {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 838px){
+    .footer{
+        width:50px;
+        height: auto;
+        
     }
 }

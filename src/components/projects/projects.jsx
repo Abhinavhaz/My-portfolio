@@ -32,6 +32,9 @@ function Projects() {
   return (
     <>
       <div className="project-container">
+        <div>
+         
+        </div>
         <div className="project2" style={{
           display: "flex",
           justifyContent: "center",

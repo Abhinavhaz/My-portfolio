@@ -2,15 +2,20 @@ import React from "react";
 import "./footer.css";
 import footerimg from "../Assets/footer-bg.png"; // Import the image
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { useMediaQuery } from "@mui/material";
+
 
 function Footer() {
+    // const isMediumScreen = useMediaQuery("(max-width: 1191px) and (min-width: 768px)");
+    const tooSmall = useMediaQuery("(max-width: 856px)");
     return (
         <footer
             className="footer"
             style={{
                 backgroundImage: `url(${footerimg})`,
                 paddingTop:"10%",
-                // backgroundColor:"skyblue",
+                
+                width:"auto",
                 height:"100%", 
                 backgroundSize: "cover", 
                 backgroundRepeat: "no-repeat", 
@@ -38,7 +43,7 @@ function Footer() {
                     </p>
                     
                 </div>
-                <div className="footer-section"  style={{marginRight:"-70px"}}>
+                <div className="footer-section"  style={{ marginRight: tooSmall ? "30px": "-30px"}}>
                     <h3>Follow Me</h3>
                     <div className="social-iconsfooter">
                         <a href="https://github.com/Abhinavhaz" target="_blank" rel="noopener noreferrer">
