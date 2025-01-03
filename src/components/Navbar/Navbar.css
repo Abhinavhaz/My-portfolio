@@ -165,24 +165,27 @@ color: black;
   .menuOpen h5 {
       margin: 5px;
       padding: 5px 0;
-      font-size: 1rem;
+      font-size: 1.2rem;
      text-decoration: none !important;
       color: white;
+      font-family: 'Courier New', Courier, monospace;
     
       cursor: pointer;
 
   }
 
   .connect {
-      margin-left: 50px;
+      margin-left: 30px;
       border: 1px solid rgb(255, 255, 255);
-      width: 100px;
+      width: 130px;
       height: 30px;
-      padding-top: 0px;
+      padding-top: 5px;
       color: white;
-      text-decoration: none;
-      text-align: center;
+     
+     text-align: center;
       cursor: pointer;
+      font-weight: 600;
+      margin-bottom: 6px;
   }
   .social-iconsNav {
     display: flex;
