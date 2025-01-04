@@ -79,12 +79,14 @@ function Skills() {
             }}
         >
             <div className="box2">
-                <h1>Skills</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptates
-                    facilis eos magni enim sequi, error ex rerum possimus, quo totam cum asperiores
-                    distinctio tempore aperiam, eum eaque facere eligendi?
-                </p>
+                <h1 style={{textDecoration:"underLine"}}>Skills</h1>
+                
+                <p style={{textAlign:"center"}}>
+    Here are my skills showcased below, reflecting my proficiency in various frontend technologies and tools. 
+    <br/>
+    Explore my expertise in crafting dynamic and responsive applications.
+</p>
+
 
                
                   
