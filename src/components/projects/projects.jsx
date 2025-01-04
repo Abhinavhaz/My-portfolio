@@ -86,7 +86,7 @@ function Projects() {
         }}>
           <h1>Projects</h1>
 <div style={{
-width:"auto"
+width:"100%",maxWidth:"900px" ,
            }}>  
           
           <p style={{ textAlign:"justify"}}>
