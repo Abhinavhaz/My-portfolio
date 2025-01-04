@@ -24,7 +24,7 @@ function Banner(){
     <br/><br/>
     I specialize in creating scalable and reusable components, and I enjoy tackling challenges to implement new features and functionalities. Whether it’s refining an existing interface or building something from scratch, I’m always eager to learn new technologies and improve my skills to deliver the best possible results.
     <br/><br/>
-   <span style={{textAlign:"center"}}>   <h3>  Let’s connect and create something amazing together!  </h3>   </span>
+   <span >   <h3>  Let’s connect and create something amazing together!  </h3>   </span>
 </p>
 
         </div>

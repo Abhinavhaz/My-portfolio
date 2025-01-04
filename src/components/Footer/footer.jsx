@@ -26,7 +26,7 @@ function Footer() {
                 <div className="footer-section">
                     <h3>About Me</h3>
                     <p>
-                        <div style={{textAlign:"justify"}}>
+                        <div style={{textAlign:"center" , letterSpacing: "0.01em" }}>
                            
                             Passionate about building user-friendly and responsive web applications.
                              Let’s create something amazing together!
