@@ -4,7 +4,8 @@ import "./skills.css";
 import Slider from "react-slick"
 import { CircularProgress, Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
-import galaxyImg from "../Assets/galaxy.avif";
+// import galaxyImg from "../Assets/galaxy2.jpg";
+import star from "../Assets/star.jpg"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -65,9 +66,10 @@ function Skills() {
         <div
             className="skill-container"
             style={{
-                // backgroundImage: `url(${galaxyImg})`,
+                backgroundImage: `url(${star})`,
                 backgroundColor:"black",
                 backgroundSize: "cover",
+               
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 width: "100%",
@@ -96,7 +98,7 @@ function Skills() {
                                     <CircularProgress
                                         variant="determinate"
                                         value={skill.percentage}
-                                        size={isMediumScreen ? 70 : tooSmall ? 65 : 80}
+                                        size={ 80}
                                         thickness={5}
                                         style={{ color: "#00CFFF" }}
                                     />

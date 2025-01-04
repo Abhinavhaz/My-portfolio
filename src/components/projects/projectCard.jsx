@@ -12,7 +12,7 @@ import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export default function PCard({ title, description ,img }) {
+export default function PCard({ title, description ,img ,vercel,github}) {
   const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
@@ -42,7 +42,7 @@ export default function PCard({ title, description ,img }) {
         }
         sx={{ textAlign:"left",color:"white" }}
         title={title}
-        subheader="September 14, 2016"
+        // subheader="September 14, 2016"
       />
       <CardMedia
         component="img"
@@ -61,7 +61,7 @@ export default function PCard({ title, description ,img }) {
 
 
      }}>
-  <Typography variant="body2" sx={{ color: "white",fontFamily:"Times-roman" }}>
+  <Typography variant="body2" sx={{ color: "white",fontFamily:"Times-roman",textAlign:"left" }}>
     {description}
   </Typography>
   
@@ -87,7 +87,7 @@ export default function PCard({ title, description ,img }) {
   <Typography paragraph sx={{ textAlign: "left", width: "100%" }}>
     Vercel link:{" "}
     <a
-      href="https://expense-peach-six.vercel.app/"
+      href={vercel}
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -98,7 +98,7 @@ export default function PCard({ title, description ,img }) {
         marginTop: 4,
       }}
     >
-      https://expense-peach-six.vercel.app/
+    {vercel}
     </a>
   </Typography>
   <Typography paragraph sx={{ textAlign: "left", width: "100%" }}>
@@ -115,9 +115,9 @@ export default function PCard({ title, description ,img }) {
        color:" rgb(61, 188, 208)"
       }}
     >
-      https://github.com/Abhinavhaz/expense
+     {github}
     </a>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit incidunt ipsum, odio nostrum error dicta esse quidem cupiditate omnis? Aut voluptas doloribus excepturi quasi obcaecati, soluta est delectus atque!
+   
   </Typography>
 </CardContent>
 

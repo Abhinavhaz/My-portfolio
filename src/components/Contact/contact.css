@@ -14,9 +14,15 @@
   margin-top: 20px;
   display: flex;
   /* flex-wrap: wrap; */
+  /* background-color: #2d2f2f; */
  
   align-items: center;
   gap: 30% ;
+
+  form{
+    /* background-color: #565555; */
+    margin:10px;
+  }
 }
 
 
@@ -180,4 +186,9 @@ p {
   .input-row input {
     width:100%;
   }
+  
+textarea {
+  width: 92%;
+  height: 100px;
+}
 }

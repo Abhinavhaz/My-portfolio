@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"; // Import social media icons
 import "./Navbar.css";
+import logo from "../Assets/logo2.png"
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ function Navbar() {
 
     return (
         <nav className="Nav">
-            <div>Logo</div>
+            <div className="logo1"><img src={logo} alt="img" className="logo" /></div>
 
             <div className="Nav2">
                 <a href="#banner">
@@ -74,6 +75,17 @@ function Navbar() {
             )}
         </nav>
     );
+    
 }
 
 export default Navbar;
+// noopener:
+
+// Prevents the new tab (or window) from gaining access to the original tab (or window) through the window.opener property.
+// Without noopener, the new page can potentially manipulate or redirect the original page using JavaScript. This is a security risk, especially if you're linking to external, untrusted websites.
+// noopener ensures that the original page is not vulnerable to these attacks.
+// noreferrer:
+
+// Prevents the browser from sending the Referer header when navigating to the new page.
+// This means the new page won't know the URL of the page where the link was clicked.
+// It's mainly used to enhance privacy by not revealing the source of the traffic.

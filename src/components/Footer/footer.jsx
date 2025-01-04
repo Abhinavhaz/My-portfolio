@@ -26,9 +26,12 @@ function Footer() {
                 <div className="footer-section">
                     <h3>About Me</h3>
                     <p>
-                        <div style={{textAlign:"center"}}>
+                        <div style={{textAlign:"justify"}}>
+                           
                             Passionate about building user-friendly and responsive web applications.
-                            Let’s create something amazing together!
+                             Let’s create something amazing together!
+                              I am committed to continuous learning and adapting to new technologies.
+                               Let's turn challenges into opportunities and create impactful digital experiences!
                         </div>
                     </p>
                 </div>

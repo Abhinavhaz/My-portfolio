@@ -196,6 +196,7 @@ export const ContactForm = () => {
     <div className="contact-form-container">
       <div className="contact2">
         <img src={contact} alt="Contact Graphic" />
+        
         <form onSubmit={handleSubmit}>
           <h2>Contact Me</h2>
           <div className="input-row">

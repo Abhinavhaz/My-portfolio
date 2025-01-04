@@ -115,13 +115,13 @@ h1{
 
     .box2{
         text-align: center;
-    
+    padding: 0px 3px 0px 4px;
         background: linear-gradient(135deg,  #cc2acf, #bd4aac, #7f7fc5);
 
     
     color:#fff;
     border-radius: 60px;
-        height: 350px;
+        height: 380px;
         width: 360px;
 h1{
     font-size: 1.3rem;
@@ -140,7 +140,10 @@ h1{
         justify-content: space-around;
         
     } */
-
+    .circular-progress-wrapper{
+      /* background-color: #bbe1e8; */
+      margin-left: 90px;
+    }
   
   }
 
