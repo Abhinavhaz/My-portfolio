@@ -42,7 +42,7 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/projects/projects";
 import { ContactForm } from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
-import banner from "../src/components/Assets/banner-bg.png";
+import banner from "../src/components/Assets/banner2.jpg";
 
 function App() {
   return (
@@ -53,7 +53,7 @@ function App() {
     >
       <img
         style={{
-          background: "red",
+         
           position: "fixed",
           height: "100vh",
           width: "100%",
